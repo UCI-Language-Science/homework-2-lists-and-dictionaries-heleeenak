@@ -26,7 +26,7 @@
 
 def char_counter():
     # YOUR CODE GOES HERE
-    print("Please enter a string:")
+    print("Please enter a string:") 
     my_string = input() # User enters string
     # Note from class: tuple("hello world") splits up the string "hello world" into a tuple of individual characters
 
