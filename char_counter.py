@@ -35,7 +35,7 @@ def char_counter():
 
     character_counts = {} # Defines an empty dictionary for us to store our character counts in
 
-    for char in my_list: # Goes through each character in the list version of our string
+    for char in my_list: # Goes through each character in the list version of our string 
         if character_counts.get(char) != None: # Checks if our dictionary contains each character (if get returns a value that is not equal to None)
             character_counts[char] = character_counts[char] + 1 # Add a vote for each unique character and put it in the dictionary
 

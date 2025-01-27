@@ -33,7 +33,7 @@ def grocery_calculator():
 
     my_total_cost = 0 # Starts off the total cost of the grocery bill at 0 so we can add to it
 
-    #print("Please input your grocery item:") 
+    #print("Please input your grocery item:") # Had to change both instances of this so that the autograding would work
     my_grocery_item = input("Please input your grocery item: ") # User inputs grocery item
 
     while my_grocery_item != "": # This runs the loop forever until the user inputs an empty line by pressing enter

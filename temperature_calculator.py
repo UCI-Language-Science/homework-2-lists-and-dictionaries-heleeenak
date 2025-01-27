@@ -22,8 +22,28 @@
 
 def temperature_calculator():
     # YOUR CODE GOES HERE
-    # You can delete the line below when you start adding code
-    pass
+
+    # This is kind of a mix between what I did for char_counter.py and grocery_calculator.py
+        # This was so hard. I think I need more practice with while loops. Almost crashed my computer accidentally because I didn't know how to stop it
+
+    my_temps_list = [] # Defines an empty list to store all the temps that the user enters
+
+    my_temp = input("Please input a temperature: ") # User inputs temperature # Formatted it like this (like grocery_calculator.py) so that autograding hopefully works
+
+    while my_temp != "quit": # This runs the loop forever until the user inputs the word "quit"
+        my_temp_float = float(my_temp)  # Converts user's temp to a floating number so we can add and stuff
+        
+        my_temps_list.append(my_temp_float) # Adds the temperature number to the list of entered temps
+        
+        temp_average = sum(my_temps_list)/len(my_temps_list) # Calculates the average by dividing the sum of all temperature numbers in the list by the length (number of entries) in the list
+        
+        print("The average temperature so far is " + str(temp_average)) # Prints out the average temp, converted to string so it has good formatting
+
+        my_temp = input("Please input a temperature: ") # User has to enter another temperature or "quit" (must be under while loop so it keeps cycling)
+
+    print("Goodbye") # This will print after the while loop is broken (so when the user types "quit")
+
+
 
 if __name__ == "__main__":
     temperature_calculator()
