@@ -10,8 +10,20 @@
 #
 def even_square_sum():
     numbers = [1, 62, 3, 57, 26, 8, 101, 200, 43, 20, 11]
+        # What we want: 62**2 + 26**2 + 8**2 + 200**2 + 20**2 = 44984 (just print the 44984)
 
     # YOUR CODE GOES HERE
+    
+    square_sum = 0 # Starts off our count at 0 so that it can add to this
+
+    for num in numbers: 
+        if (num % 2) == 0: # Tests if a number is even by calculating if dividing by 2 results in a remainder
+            squares = num**2 # Creates squares of the even numbers
+            square_sum += squares # Uses an augmented assignment that does the same thing as square_sum = square_sum + squares
+
+        # I'm pretty sure I don't need an else?
+
+    print(square_sum)
 
 if __name__ == "__main__":
     even_square_sum()
